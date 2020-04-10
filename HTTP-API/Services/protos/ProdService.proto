@@ -1,0 +1,26 @@
+syntax="proto3";
+package Services;
+import "Models.proto";
+
+message ProdRequest{
+    // @inject_tag: json:"size" form:"size"
+    int32 size=1;
+    // @inject_tag: json:"pid" form:"pid" uri:"pid"
+    int32 prod_id=2;
+}
+
+message ProdListResponse{
+    repeated ProdModel data=1; //数组，切片
+}
+
+message ProdDeatilResponse{
+    ProdModel data=1;
+}
+
+//服务接口
+service ProdService{
+    //获取商品列表
+    rpc GetProdList(ProdRequest) returns (ProdListResponse);
+    //获取商品详情
+    rpc GetProdDeatil(ProdRequest) returns(ProdDeatilResponse);
+}

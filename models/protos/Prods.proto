@@ -1,0 +1,16 @@
+syntax="proto3";
+package Models;
+
+message ProdModel{
+    // @inject_tag: json:"pid"
+    int32 ProdID=1;
+    // @inject_tag: json:"pname"
+    string ProdName=2;
+}
+
+message ProdRequest{
+    int32 size=1;
+}
+message ProListResponse{
+    repeated  ProdModel data=1;  //repeated代表数组,切片
+}
