@@ -1,12 +1,12 @@
 # go-micro微服务架构
-## go-micro-http api项目
+
 ## HTTP-API 项目 :
     http api服务，是go-micro client端，访问server服务:go-micoro-rpc 项目下的rpc服务，跟本项目没有关系
 ## HTTP REST 项目:
     外部客户端http调用 http api服务，访问go-micro client端，跟本项目没有关系
-    
-### git仓库:https://github.com/micro
 
+## go-micro-http api项目
+### git仓库:https://github.com/micro
 ### 解析图
 ```text
 images/http-api.png
@@ -33,7 +33,7 @@ prod
 go.mod
 prod.bat                命令行，开启多个prod_main服务
 gen.bat                 proto文件生成go文件的命令
-HTTP-API                **client端，访问go-micoro-rpc 项目下的grpc服务，跟本项目没有关系**
+HTTP-API                **client端，访问go-micoro-rpc 项目下的rpc服务，跟本项目没有关系**
 HTTP-REST               **http api客户端访问 go-micro client端服务，跟本项目没有关系**
 ```
 
