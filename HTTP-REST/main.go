@@ -11,7 +11,7 @@ import (
 	"log"
 )
 
-//HTTP API 访问go-micro client端
+//HTTP rest 访问go-micro client端/HTTP-API
 //使用go-plugins里面的http调用包
 //注：go-plugins/client/http调用包只能通过POST方式访问
 

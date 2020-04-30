@@ -14,7 +14,7 @@ import (
 	"go-micro-pro/HTTP-API/Wrappers"
 )
 
-//client http(httpServer)访问grpc服务(go-micro-rpc)
+//http client (httpServer)访问rpc服务(go-micro-rpc)
 //1.访问：使用postman 访问client服务
 //2.加入go-micro的装饰器wrapper -> logWrapper（中间件），在执行之前做一些其他事情
 
